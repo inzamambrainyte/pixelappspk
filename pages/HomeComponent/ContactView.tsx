@@ -5,12 +5,9 @@ import { motion } from "framer-motion";
 import {
   EnvelopeSimple,
   MapPin,
-  Clock,
   CheckCircle,
   WarningCircle,
 } from "@phosphor-icons/react";
-import { Navbar } from "./Navbar";
-import { Footer } from "./Footer";
 import data from "@/content/data.json";
 
 export const ContactView: React.FC = () => {
@@ -71,10 +68,7 @@ export const ContactView: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#ecedf1] text-[#1c1c1c] flex flex-col justify-between">
-      <Navbar />
-
-      <main className="w-full flex-grow pt-36 sm:pt-44 pb-24 px-4 sm:px-6 lg:px-8 max-w-[1300px] mx-auto flex flex-col items-center">
+    <main className="w-full flex-grow pt-36 sm:pt-44 pb-24 px-4 sm:px-6 lg:px-8 max-w-[1300px] mx-auto flex flex-col items-center">
         <motion.div
           initial={{
             opacity: 0.001,
@@ -163,21 +157,6 @@ export const ContactView: React.FC = () => {
                 </p>
                 <p className="text-sm text-[#666666]">
                   DriveConnect & AI Chatbot Solutions
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-[#ecedf1] rounded-[25px] p-6 sm:p-8 shadow-neu-card border border-white/50 flex items-start gap-5">
-              <div className="w-[60px] h-[60px] rounded-full bg-[#ecedf1] shadow-neu-icon flex items-center justify-center text-[#46bab4] shrink-0">
-                <Clock size={28} weight="regular" />
-              </div>
-              <div className="flex flex-col gap-1">
-                <h3 className="text-lg font-semibold text-[#1c1c1c]">Business Hours</h3>
-                <p className="text-base text-[#1c1c1c] font-medium">
-                  Monday – Friday
-                </p>
-                <p className="text-sm text-[#666666]">
-                  9:00 AM – 6:00 PM PKT
                 </p>
               </div>
             </div>
@@ -292,11 +271,8 @@ export const ContactView: React.FC = () => {
           </div>
         </motion.div>
       </main>
-
-      <Footer />
-    </div>
-  );
-};
+    );
+  };
 
 export default ContactView;
 
