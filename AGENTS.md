@@ -56,14 +56,14 @@
 ### 2. Directory Structure & File Placement
 * **NO `src/` directory**: All App Router pages and routes reside strictly under `/app`.
 * **Root `/components/ui/`**: All reusable UI primitives (`Button.tsx`, `Card.tsx`, `Input.tsx`, `Textarea.tsx`, `index.ts`) reside in `/components/ui/`. Props must be used to customize behavior/styles.
-* **Component Placement**: Section components reside outside `/app` in `/pages/HomeComponent/`.
+* **Component Placement (`/components/pages/`)**: Section and page components reside strictly in `/components/pages/HomeComponent/` alongside `/components/ui/`.
+* **Pure App Router Architecture**: NO root `/pages/` directory exists, ensuring pure Next.js App Router routing with native `app/not-found.tsx` and zero Pages Router collisions.
 * **Root `/hooks/` Directory**: All complex UI state, scroll-spy, active navigation, and form state logic MUST be extracted into custom hooks in `/hooks/` (e.g. `useContactForm.ts`, `useNavbarNavigation.ts`), re-exported via `/hooks/index.ts`.
 * **Separate Backend & Frontend Services**:
   * Frontend API calls reside in `/services/frontend/contactService.ts`. Because frontend and backend are in the same Next.js application, fetch calls directly invoke `/api/contact` without any redundant base URL prefix.
   * Backend business logic and Mongoose persistence reside in `/services/backend/contactService.ts`.
 * **Central Data Store**: All website copy, texts, links, questions, FAQs, and legal terms reside in a **single JSON file** at `/content/data.json`.
 * **Root `/types/` Folder**: All data contract interfaces, API response types, and shared types reside strictly in `/types/` (`types/home.ts`, `types/contact.ts`, `types/index.ts`). No types should be defined inline in services or components.
-* **Pages Router Fallback (`/pages/404.tsx`)**: Because `/pages/HomeComponent/` exists alongside `/app`, Next.js activates hybrid routing. A fallback `pages/404.tsx` is required to prevent Next.js build invariant errors.
 
 ### 3. SEO & OpenGraph Rules
 * **No Page-Specific SEO in Layout**: Global `app/layout.tsx` only defines `metadataBase` and `icons`.
@@ -107,41 +107,24 @@
 │   └── terms/
 │       └── page.tsx        # Terms & conditions route + SEO
 ├── components/
+│   ├── pages/
+│   │   └── HomeComponent/
+│   │       ├── Navbar.tsx      # Inset-shadow neumorphic navbar with sliding pill indicator
+│   │       ├── Hero.tsx        # Hero section matching original design schema
+│   │       ├── Features.tsx    # 6 feature cards rendered via .map()
+│   │       ├── Benefits.tsx    # 6 benefit cards rendered via .map()
+│   │       ├── About.tsx       # Company story & dynamic App Store link
+│   │       ├── FAQ.tsx         # Interactive spring-animated accordion
+│   │       ├── Contact.tsx     # Neumorphic contact form with min/max validation & POST API integration
+│   │       ├── ContactView.tsx # Dedicated Contact Us page view with cards, form, and animations
+│   │       ├── LegalView.tsx   # Reusable Privacy & Terms view matching original site layout & Framer animations
+│   │       └── Footer.tsx      # Attribution, legal links, and social icon buttons
 │   └── ui/
 │       ├── Button.tsx      # Reusable neumorphic Button component
 │       ├── Card.tsx        # Single reusable neumorphic Card component with icon resolution
 │       ├── Input.tsx       # Reusable neumorphic Input component
 │       ├── Textarea.tsx    # Reusable neumorphic Textarea component
 │       └── index.ts        # UI component export barrel
-├── content/
-│   └── data.json           # Single consolidated JSON file with all website copy and links
-├── controllers/
-│   └── contactController.ts# Request sanitization, field validation and response mapping
-├── hooks/
-│   ├── useContactForm.ts   # Custom hook controlling contact form state, validation, and submission
-│   ├── useNavbarNavigation.ts # Custom hook for navbar scroll-spy and sliding pill hover tracking
-│   └── index.ts            # Hooks export barrel
-├── lib/
-│   ├── helpers/
-│   │   └── regex.ts        # Reusable regex patterns and string sanitization helpers
-│   ├── middleware/
-│   │   └── errorHandler.ts # Centralized route handler error handling middleware
-│   └── mongodb.ts          # Mongoose database connection pooling singleton
-├── models/
-│   └── Contact.ts          # Mongoose Contact schema and model for contacts collection
-├── pages/
-│   ├── 404.tsx             # Pages Router 404 fallback (prevents invariant error)
-│   └── HomeComponent/
-│       ├── Navbar.tsx      # Inset-shadow neumorphic navbar with sliding pill indicator
-│       ├── Hero.tsx        # Hero section matching original design schema
-│       ├── Features.tsx    # 6 feature cards rendered via .map()
-│       ├── Benefits.tsx    # 6 benefit cards rendered via .map()
-│       ├── About.tsx       # Company story & dynamic App Store link
-│       ├── FAQ.tsx         # Interactive spring-animated accordion
-│       ├── Contact.tsx     # Neumorphic contact form with min/max validation & POST API integration
-│       ├── ContactView.tsx # Dedicated Contact Us page view with cards, form, and animations
-│       ├── LegalView.tsx   # Reusable Privacy & Terms view matching original site layout & Framer animations
-│       └── Footer.tsx      # Attribution, legal links, and social icon buttons
 ├── public/
 │   └── logo.png            # Official Pixel Apps brand logo
 ├── services/

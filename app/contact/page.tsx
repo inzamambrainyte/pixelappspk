@@ -1,6 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import { ContactView } from "@/pages/HomeComponent/ContactView";
+import { ContactView } from "@/components/pages/HomeComponent/ContactView";
 import data from "@/content/data.json";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || data.config.siteUrl;

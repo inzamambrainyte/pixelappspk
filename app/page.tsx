@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Hero } from "@/pages/HomeComponent/Hero";
-import { Features } from "@/pages/HomeComponent/Features";
-import { Benefits } from "@/pages/HomeComponent/Benefits";
-import { About } from "@/pages/HomeComponent/About";
-import { FAQ } from "@/pages/HomeComponent/FAQ";
+import { Hero } from "@/components/pages/HomeComponent/Hero";
+import { Features } from "@/components/pages/HomeComponent/Features";
+import { Benefits } from "@/components/pages/HomeComponent/Benefits";
+import { About } from "@/components/pages/HomeComponent/About";
+import { FAQ } from "@/components/pages/HomeComponent/FAQ";
 import data from "@/content/data.json";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || data.config.siteUrl;
