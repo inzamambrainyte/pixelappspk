@@ -98,7 +98,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className="w-full bg-[#ecedf1] py-8 sm:py-10 px-4 sm:px-6">
       <div className="max-w-[1360px] mx-auto flex flex-col items-center gap-6">
-        <Link href="/#hero" className="flex items-center gap-2.5">
+        <Link href="/" className="flex items-center gap-2.5">
           <div className="w-[50px] h-[50px] rounded-full overflow-hidden shrink-0 flex items-center justify-center">
             <Image
               src={logoPath}
