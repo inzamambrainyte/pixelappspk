@@ -116,8 +116,13 @@
 ├── public/
 │   └── logo.png            # Official Pixel Apps brand logo
 ├── services/
-│   ├── contactApiService.ts# Client-side API service invoking /api/contact
-│   └── contactService.ts   # Server-side business logic and database persistence service
+│   ├── backend/
+│   │   ├── contactService.ts # Server-side business logic and database persistence service
+│   │   └── index.ts
+│   ├── frontend/
+│   │   ├── contactService.ts # Client-side API service invoking /api/contact
+│   │   └── index.ts
+│   └── index.ts
 ├── types/
 │   ├── contact.ts          # Contact form and document data interfaces
 │   ├── home.ts             # TypeScript interfaces and data contracts

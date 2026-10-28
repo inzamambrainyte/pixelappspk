@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ContactFormData } from "@/types";
-import { ContactApiService } from "@/services/contactApiService";
+import { ContactApiService } from "@/services/frontend/contactService";
 
 export type FormStatus = "idle" | "loading" | "success" | "error";
 

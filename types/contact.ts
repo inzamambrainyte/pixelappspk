@@ -10,3 +10,10 @@ export interface ContactDocument extends ContactFormData {
   updatedAt: Date;
 }
 
+export interface ContactApiResponse {
+  success: boolean;
+  message?: string;
+  error?: string;
+  id?: string;
+}
+

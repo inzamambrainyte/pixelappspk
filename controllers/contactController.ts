@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isValidEmail, sanitizeText } from "@/lib/helpers/regex";
 import { ValidationError } from "@/lib/middleware/errorHandler";
-import { ContactService } from "@/services/contactService";
+import { ContactService } from "@/services/backend/contactService";
 
 export class ContactController {
   public static async handleSubmission(req: NextRequest): Promise<NextResponse> {
