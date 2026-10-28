@@ -13,12 +13,17 @@ const poppins = Poppins({
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || data.config.siteUrl;
+const allowIndexing = process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   icons: {
     icon: data.config.favicon,
     apple: data.config.favicon,
+  },
+  robots: {
+    index: allowIndexing,
+    follow: allowIndexing,
   },
 };
 

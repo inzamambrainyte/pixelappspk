@@ -141,7 +141,7 @@
 │   ├── contact.ts          # Contact form, API response, and document data interfaces
 │   ├── home.ts             # TypeScript interfaces and data contracts
 │   └── index.ts            # Export barrel for types
-├── .env.example            # Environment variables template (MONGODB_URI, NEXT_PUBLIC_SITE_URL, etc.)
+├── .env.example            # Environment variables template (MONGODB_URI, NEXT_PUBLIC_SITE_URL, NEXT_PUBLIC_ALLOW_INDEXING, etc.)
 ├── .gitignore              # Ignored files (node_modules, .next, .env*, rea_analysis)
 ├── AGENTS.md               # Architecture, REA findings & developer notes (this file)
 ├── next.config.ts
