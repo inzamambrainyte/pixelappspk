@@ -466,63 +466,384 @@
     ]
   },
   "Terms": {
-    "title": "Terms",
+    "title": "Terms and Conditions",
     "blocks": [
       {
         "type": "paragraph",
-        "text": "These terms and conditions apply to the DriveConnect: Files and Docs Hub app (hereby referred to as \"Application\") for mobile devices that was created by Pixel Apps SMC PVT LTD. (hereby referred to as \"Service Provider\") as a Freemium service."
+        "text": "Effective Date: October 28, 2026"
       },
       {
         "type": "paragraph",
-        "text": "Upon downloading or utilizing the Application, you are automatically agreeing to the following terms. It is strongly advised that you thoroughly read and understand these terms prior to using the Application. Unauthorized copying, modification of the Application, any part of the Application, or our trademarks is strictly prohibited. Any attempts to extract the source code of the Application, translate the Application into other languages, or create derivative versions are not permitted. All trademarks, copyrights, database rights, and other intellectual property rights related to the Application remain the property of the Service Provider."
+        "text": "These Terms and Conditions (“Terms”) apply to the AI Chatbot: Ask AI Assistant mobile application (“Application”), developed and provided by Pixel Apps SMC PVT LTD. (“Service Provider”, “we”, “us”, or “our”)."
       },
       {
         "type": "paragraph",
-        "text": "The Service Provider is dedicated to ensuring that the Application is as beneficial and efficient as possible. As such, they reserve the right to modify the Application or charge for their services at any time and for any reason. The Service Provider assures you that any charges for the Application or its services will be clearly communicated to you."
-      },
-      {
-        "type": "paragraph",
-        "text": "The Application stores and processes personal data that you have provided to the Service Provider in order to provide the Service. It is your responsibility to maintain the security of your phone and access to the Application. The Service Provider strongly advise against jailbreaking or rooting your phone, which involves removing software restrictions and limitations imposed by the official operating system of your device. Such actions could expose your phone to malware, viruses, malicious programs, compromise your phone's security features, and may result in the Application not functioning correctly or at all."
-      },
-      {
-        "type": "paragraph",
-        "text": "Please be aware that the Service Provider does not assume responsibility for certain aspects. Some functions of the Application require an active internet connection, which can be Wi-Fi or provided by your mobile network provider. The Service Provider cannot be held responsible if the Application does not function at full capacity due to lack of access to Wi-Fi or if you have exhausted your data allowance."
-      },
-      {
-        "type": "paragraph",
-        "text": "If you are using the application outside of a Wi-Fi area, please be aware that your mobile network provider's agreement terms still apply. Consequently, you may incur charges from your mobile provider for data usage during the connection to the application, or other third-party charges. By using the application, you accept responsibility for any such charges, including roaming data charges if you use the application outside of your home territory (i.e., region or country) without disabling data roaming. If you are not the bill payer for the device on which you are using the application, they assume that you have obtained permission from the bill payer."
-      },
-      {
-        "type": "paragraph",
-        "text": "Similarly, the Service Provider cannot always assume responsibility for your usage of the application. For instance, it is your responsibility to ensure that your device remains charged. If your device runs out of battery and you are unable to access the Service, the Service Provider cannot be held responsible."
-      },
-      {
-        "type": "paragraph",
-        "text": "In terms of the Service Provider's responsibility for your use of the application, it is important to note that while they strive to ensure that it is updated and accurate at all times, they do rely on third parties to provide information to them so that they can make it available to you. The Service Provider accepts no liability for any loss, direct or indirect, that you experience as a result of relying entirely on this functionality of the application."
-      },
-      {
-        "type": "paragraph",
-        "text": "The Service Provider may wish to update the application at some point. The application is currently available as per the requirements for the operating system (and for any additional systems they decide to extend the availability of the application to) may change, and you will need to download the updates if you want to continue using the application. The Service Provider does not guarantee that it will always update the application so that it is relevant to you and/or compatible with the particular operating system version installed on your device. However, you agree to always accept updates to the application when offered to you. The Service Provider may also wish to cease providing the application and may terminate its use at any time without providing termination notice to you. Unless they inform you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must cease using the application, and (if necessary) delete it from your device."
+        "text": "By downloading, accessing, purchasing, subscribing to, or using the Application, you agree to these Terms. If you do not agree with these Terms, you should not use the Application."
       },
       {
         "type": "heading",
-        "text": "Changes to These Terms and Conditions"
+        "text": "1. About the Application"
       },
       {
         "type": "paragraph",
-        "text": "The Service Provider may periodically update their Terms and Conditions. Therefore, you are advised to review this page regularly for any changes. The Service Provider will notify you of any changes by posting the new Terms and Conditions on this page."
-      },
-      {
-        "type": "heading",
-        "text": "These terms and conditions are effective as of 2025-08-20"
-      },
-      {
-        "type": "heading",
-        "text": "Contact Us"
+        "text": "AI Chatbot: Ask AI Assistant is an AI-powered application designed to provide users with conversational assistance, answers, content generation, writing assistance, information, and other AI-powered functionality."
       },
       {
         "type": "paragraph",
-        "text": "If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at info@pixelappspk.com."
+        "text": "The Application may use third-party artificial intelligence services and other third-party technologies to generate or process content."
+      },
+      {
+        "type": "paragraph",
+        "text": "AI-generated information is provided for general informational and assistance purposes and should not be considered a substitute for professional, legal, medical, financial, or other specialized advice."
+      },
+      {
+        "type": "heading",
+        "text": "2. AI-Generated Content"
+      },
+      {
+        "type": "paragraph",
+        "text": "Certain content provided through the Application is generated using artificial intelligence."
+      },
+      {
+        "type": "paragraph",
+        "text": "Artificial intelligence systems can produce inaccurate, incomplete, outdated, misleading, or inappropriate information. The Service Provider does not guarantee that AI-generated responses will always be accurate, complete, reliable, or suitable for a particular purpose."
+      },
+      {
+        "type": "paragraph",
+        "text": "Users are responsible for independently reviewing and verifying important information before relying upon it."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider is not responsible for decisions or actions taken based on AI-generated content."
+      },
+      {
+        "type": "heading",
+        "text": "3. User Content"
+      },
+      {
+        "type": "paragraph",
+        "text": "Users may be able to submit questions, prompts, text, images, documents, or other content (“User Content”) to use certain features of the Application."
+      },
+      {
+        "type": "paragraph",
+        "text": "You are responsible for the content you submit and must ensure that you have the necessary rights and permissions to use and submit such content."
+      },
+      {
+        "type": "paragraph",
+        "text": "You must not submit content that:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Violates applicable laws or regulations;",
+          "Infringes intellectual property or other rights of another person;",
+          "Contains unlawful, abusive, fraudulent, malicious, or harmful material;",
+          "Attempts to interfere with, exploit, reverse engineer, or compromise the Application or its supporting services; or",
+          "Is otherwise prohibited by these Terms."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Certain User Content may be transmitted to third-party service providers when necessary to provide requested functionality. Such processing is subject to our Privacy Policy and, where applicable, the policies of the relevant third-party provider."
+      },
+      {
+        "type": "heading",
+        "text": "4. Third-Party Services"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Application may depend on third-party services, including artificial intelligence providers, cloud infrastructure, application marketplaces, subscription systems, and other technology providers."
+      },
+      {
+        "type": "paragraph",
+        "text": "The availability and operation of certain Application features may therefore depend on these third-party services."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider does not control all aspects of third-party services and cannot guarantee their continuous availability, accuracy, performance, or functionality."
+      },
+      {
+        "type": "paragraph",
+        "text": "Third-party services may be governed by their own terms, policies, and privacy practices."
+      },
+      {
+        "type": "heading",
+        "text": "5. Privacy"
+      },
+      {
+        "type": "paragraph",
+        "text": "Your use of the Application is also subject to our Privacy Policy."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider does not directly collect or store users’ personal data on its own servers through the Application except where specifically disclosed."
+      },
+      {
+        "type": "paragraph",
+        "text": "Certain information or content may be processed by third-party services when required to provide functionality requested by the user. Please review the Privacy Policy for additional information regarding data processing and third-party services."
+      },
+      {
+        "type": "heading",
+        "text": "6. Freemium Features"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Application may provide certain features free of charge while requiring payment or a subscription to access premium functionality."
+      },
+      {
+        "type": "paragraph",
+        "text": "The availability, limitations, usage allowances, and functionality of free and premium features may change over time."
+      },
+      {
+        "type": "paragraph",
+        "text": "We reserve the right to add, modify, restrict, or discontinue features where reasonably necessary to improve, maintain, or operate the Application."
+      },
+      {
+        "type": "heading",
+        "text": "7. Subscriptions and In-App Purchases"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Application may offer auto-renewable subscriptions or other in-app purchases."
+      },
+      {
+        "type": "paragraph",
+        "text": "Where purchases are made through the Apple App Store, payment will be charged to your Apple ID account according to Apple’s applicable payment terms."
+      },
+      {
+        "type": "paragraph",
+        "text": "Subscription prices, durations, trial periods, and other purchase information will be displayed within the Application or on the applicable App Store purchase screen before you complete a purchase."
+      },
+      {
+        "type": "paragraph",
+        "text": "Unless otherwise stated, an auto-renewable subscription will automatically renew unless it is cancelled before the end of the current subscription period in accordance with the applicable App Store requirements."
+      },
+      {
+        "type": "paragraph",
+        "text": "You can manage or cancel subscriptions through your Apple ID Account Settings on your device."
+      },
+      {
+        "type": "paragraph",
+        "text": "Pricing and subscription terms may be updated from time to time. Where required by applicable App Store rules, you will be notified of price changes in advance."
+      },
+      {
+        "type": "heading",
+        "text": "8. Billing and Cancellations"
+      },
+      {
+        "type": "paragraph",
+        "text": "All payment transactions, billing inquiries, and subscription management are handled directly by the Apple App Store (or other marketplace provider through which you downloaded the Application)."
+      },
+      {
+        "type": "paragraph",
+        "text": "Because the Service Provider does not directly process payments or manage App Store accounts, the Service Provider cannot directly issue refunds, pause subscriptions, or modify billing details for App Store purchases."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you wish to request a refund, you must do so through Apple’s refund request process in accordance with Apple’s policies."
+      },
+      {
+        "type": "heading",
+        "text": "9. User Responsibilities"
+      },
+      {
+        "type": "paragraph",
+        "text": "You agree to use the Application in compliance with these Terms, applicable laws, and relevant third-party terms (including App Store rules and guidelines)."
+      },
+      {
+        "type": "paragraph",
+        "text": "You are responsible for:"
+      },
+      {
+        "type": "paragraph",
+        "text": "Maintaining the security of your device;"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ensuring you have internet access required to use online features of the Application; and"
+      },
+      {
+        "type": "paragraph",
+        "text": "The accuracy and legality of any content you submit through the Application."
+      },
+      {
+        "type": "heading",
+        "text": "10. Prohibited Activities"
+      },
+      {
+        "type": "paragraph",
+        "text": "You agree that you will not:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Gain unauthorized access to the Application or associated systems;",
+          "Circumvent subscription, payment, usage, or feature restrictions;",
+          "Abuse or excessively automate requests to the Application;",
+          "Reverse engineer, modify, decompile, or interfere with the Application except where permitted by applicable law;",
+          "Use automated systems, bots, scripts, or similar mechanisms to exploit the Application;",
+          "Introduce malware or other harmful code;",
+          "Interfere with the Application’s infrastructure or third-party services; or",
+          "Use the Application for unlawful purposes."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "We reserve the right to restrict or terminate access where we reasonably determine that the Application is being abused or used in violation of these Terms."
+      },
+      {
+        "type": "heading",
+        "text": "11. Intellectual Property"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Application, including its design, software, branding, graphics, interfaces, and original content, is owned by or licensed to Pixel Apps SMC PVT LTD. and is protected by applicable intellectual property laws."
+      },
+      {
+        "type": "paragraph",
+        "text": "These Terms do not grant users ownership of the Application or any intellectual property belonging to the Service Provider."
+      },
+      {
+        "type": "paragraph",
+        "text": "Users receive a limited, personal, non-exclusive, non-transferable, and revocable right to use the Application in accordance with these Terms."
+      },
+      {
+        "type": "heading",
+        "text": "12. Availability and Changes to the Service"
+      },
+      {
+        "type": "paragraph",
+        "text": "We aim to keep the Application operational but do not guarantee uninterrupted or error-free availability."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Application or individual features may occasionally be unavailable due to maintenance, technical problems, third-party service outages, upgrades, security requirements, or circumstances outside our reasonable control."
+      },
+      {
+        "type": "paragraph",
+        "text": "We may update, modify, replace, suspend, or discontinue features of the Application when reasonably necessary."
+      },
+      {
+        "type": "heading",
+        "text": "13. Disclaimer of Warranties"
+      },
+      {
+        "type": "paragraph",
+        "text": "To the maximum extent permitted by applicable law, the Application and its content are provided on an “AS IS” and “AS AVAILABLE” basis."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider does not warrant that:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "The Application will always be available or error-free;",
+          "AI-generated content will always be accurate or complete;",
+          "The Application will meet every user’s individual requirements;",
+          "Third-party services will remain available; or",
+          "Every defect or technical issue will be corrected immediately."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Nothing in these Terms excludes warranties or rights that cannot legally be excluded under applicable consumer protection laws."
+      },
+      {
+        "type": "heading",
+        "text": "14. Limitation of Liability"
+      },
+      {
+        "type": "paragraph",
+        "text": "To the maximum extent permitted by applicable law, Pixel Apps SMC PVT LTD. will not be liable for indirect, incidental, special, consequential, or similar damages resulting from the use of, inability to use, or reliance upon the Application or AI-generated content."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider is not responsible for losses resulting from inaccurate AI-generated information, third-party service failures, network interruptions, device problems, or misuse of the Application."
+      },
+      {
+        "type": "paragraph",
+        "text": "Nothing in these Terms limits liability where such limitation is prohibited by applicable law."
+      },
+      {
+        "type": "heading",
+        "text": "15. Termination"
+      },
+      {
+        "type": "paragraph",
+        "text": "You may stop using the Application at any time."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider may suspend or terminate access to the Application where reasonably necessary, including in cases involving abuse, fraud, security threats, unlawful activity, violation of these Terms, or attempts to circumvent Application restrictions."
+      },
+      {
+        "type": "paragraph",
+        "text": "Termination of access does not automatically cancel subscriptions managed through a third-party application marketplace. Users remain responsible for cancelling active subscriptions through the applicable marketplace."
+      },
+      {
+        "type": "heading",
+        "text": "16. Children’s Use"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider does not knowingly collect personal information from children under the age of 13."
+      },
+      {
+        "type": "paragraph",
+        "text": "Users who are not legally able to consent to these Terms in their jurisdiction should use the Application only with the involvement and consent of a parent or legal guardian where required by applicable law."
+      },
+      {
+        "type": "paragraph",
+        "text": "Parents and guardians are encouraged to supervise children’s use of AI-powered services."
+      },
+      {
+        "type": "heading",
+        "text": "17. Changes to These Terms"
+      },
+      {
+        "type": "paragraph",
+        "text": "We may update these Terms from time to time to reflect changes to the Application, third-party services, legal requirements, or our business practices."
+      },
+      {
+        "type": "paragraph",
+        "text": "The updated Terms will be made available through the Application or the location where these Terms are published, and the effective date will be updated accordingly."
+      },
+      {
+        "type": "paragraph",
+        "text": "Continued use of the Application following an update constitutes acceptance of the revised Terms to the extent permitted by applicable law."
+      },
+      {
+        "type": "heading",
+        "text": "18. Apple App Store Terms"
+      },
+      {
+        "type": "paragraph",
+        "text": "If you download the Application through the Apple App Store, you acknowledge that these Terms are between you and Pixel Apps SMC PVT LTD., and not Apple."
+      },
+      {
+        "type": "paragraph",
+        "text": "Apple is not responsible for the Application or its content, maintenance, support, or services except as required under Apple’s applicable terms."
+      },
+      {
+        "type": "paragraph",
+        "text": "Your use of the Application must also comply with applicable Apple Media Services Terms and Conditions and App Store rules."
+      },
+      {
+        "type": "heading",
+        "text": "19. Contact Us"
+      },
+      {
+        "type": "paragraph",
+        "text": "If you have questions about these Terms and Conditions or the Application, please contact:"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pixel Apps SMC PVT LTD."
+      },
+      {
+        "type": "paragraph",
+        "text": "Email: info@pixelappspk.com"
       }
     ]
   }
