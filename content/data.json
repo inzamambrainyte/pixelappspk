@@ -227,10 +227,6 @@
     "blocks": [
       {
         "type": "paragraph",
-        "text": "Effective Date: October 28, 2026"
-      },
-      {
-        "type": "paragraph",
         "text": "This Privacy Policy applies to the AI Chatbot: Ask AI Assistant application (“Application”) for mobile devices, developed and provided by Pixel Apps SMC PVT LTD. (“Service Provider”, “we”, “us”, or “our”). The Application is provided as a freemium service and is intended for use “AS IS.”"
       },
       {
@@ -282,18 +278,6 @@
       {
         "type": "paragraph",
         "text": "Users should avoid submitting sensitive personal information through AI prompts or other input fields unless necessary for the requested functionality."
-      },
-      {
-        "type": "heading",
-        "text": "Face Data"
-      },
-      {
-        "type": "paragraph",
-        "text": "The Application does not collect, process, store, retain, or share face data or facial biometric information."
-      },
-      {
-        "type": "paragraph",
-        "text": "The Application does not currently provide features that require facial recognition, facial analysis, or the processing of face data."
       },
       {
         "type": "heading",
