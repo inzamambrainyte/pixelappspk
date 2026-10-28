@@ -4,8 +4,10 @@ import { Navbar } from "@/pages/HomeComponent/Navbar";
 import { Footer } from "@/pages/HomeComponent/Footer";
 import data from "@/content/data.json";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || data.config.siteUrl;
+
 export const metadata: Metadata = {
-  metadataBase: new URL(data.config.siteUrl),
+  metadataBase: new URL(siteUrl),
   title: data.config.metaTitle,
   description: data.config.metaDescription,
   icons: {
@@ -15,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: data.config.ogTitle,
     description: data.config.ogDescription,
-    url: data.config.siteUrl,
+    url: siteUrl,
     siteName: data.config.siteName,
     images: [
       {

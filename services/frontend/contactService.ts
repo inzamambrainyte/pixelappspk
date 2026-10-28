@@ -4,7 +4,8 @@ export class ContactApiService {
   public static async submit(
     data: ContactFormData
   ): Promise<ContactApiResponse> {
-    const response = await fetch("/api/contact", {
+    const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "";
+    const response = await fetch(`${baseUrl}/api/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

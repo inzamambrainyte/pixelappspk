@@ -6,6 +6,7 @@ import data from "@/content/data.json";
 
 export const About: React.FC = () => {
   const { badge, title, paragraphs, ctaText, ctaLink } = data.Home.about;
+  const productLink = process.env.NEXT_PUBLIC_APP_STORE_URL || ctaLink;
 
   return (
     <section id="about-us" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
@@ -32,7 +33,7 @@ export const About: React.FC = () => {
           </div>
 
           <a
-            href={ctaLink}
+            href={productLink}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-3.5 rounded-[50px] text-base font-normal text-white bg-[#46bab4] hover:bg-black transition-all duration-300 shadow-neu-button active:shadow-neu-button-inset"
