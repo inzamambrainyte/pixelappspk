@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ecedf1;
+  --foreground: #1c1c1c;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #ecedf1;
+  color: #1c1c1c;
+}
+
+body {
+  background-color: #ecedf1;
+  color: #1c1c1c;
+  overflow-x: hidden;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+.neu-flat {
+  background: #ecedf1;
+  box-shadow: -10px -10px 20px #fafbff, 10px 10px 20px #a6abbd40;
+}
+
+.neu-inset {
+  background: #ecedf1;
+  box-shadow: inset -5px -5px 10px #fafbff, inset 5px 5px 10px #a6abbd40;
+}
+
+.neu-pill {
+  background: #ecedf1;
+  box-shadow: inset -2px -2px 4px 0px #fafbff, inset 2px 2px 4px 0px rgba(70, 186, 180, 0.25);
+}
