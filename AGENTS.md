@@ -104,6 +104,8 @@
 │   ├── not-found.tsx       # App Router 404 page
 │   ├── privacy/
 │   │   └── page.tsx        # Privacy policy route + SEO
+│   ├── robots.ts           # Dynamic robots.txt generation
+│   ├── sitemap.ts          # Dynamic sitemap.xml generation
 │   └── terms/
 │       └── page.tsx        # Terms & conditions route + SEO
 ├── components/
