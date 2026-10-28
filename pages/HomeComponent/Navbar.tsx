@@ -1,64 +1,23 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { List, X } from "@phosphor-icons/react";
 import data from "@/content/data.json";
+import { useNavbarNavigation } from "@/hooks";
 
 export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeHref, setActiveHref] = useState<string | null>(null);
-  const [hoveredHref, setHoveredHref] = useState<string | null>(null);
-  const pathname = usePathname();
-
   const { brandName, logoPath, navLinks, ctaText, ctaLink } = data.Navigation;
 
-  useEffect(() => {
-    if (pathname !== "/") {
-      setActiveHref(null);
-      return;
-    }
-
-    const sectionIds = ["services", "benefits", "about-us", "faq"];
-
-    const handleScroll = () => {
-      if (
-        window.innerHeight + window.scrollY >=
-        document.documentElement.scrollHeight - 60
-      ) {
-        setActiveHref("/#faq");
-        return;
-      }
-
-      if (window.scrollY < 120) {
-        setActiveHref(null);
-        return;
-      }
-
-      let current: string | null = null;
-      for (const id of sectionIds) {
-        const el = document.getElementById(id);
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          if (rect.top <= 200 && rect.bottom > 200) {
-            current = `/#${id}`;
-            break;
-          }
-        }
-      }
-
-      setActiveHref(current);
-    };
-
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [pathname]);
-
-  const highlightedHref = hoveredHref ?? activeHref;
+  const {
+    activeHref,
+    setActiveHref,
+    setHoveredHref,
+    highlightedHref,
+  } = useNavbarNavigation();
 
   return (
     <header className="fixed top-4 left-0 right-0 z-50 px-4 sm:px-6 pointer-events-none">
