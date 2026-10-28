@@ -23,7 +23,7 @@
   * Buttons: `box-shadow: -5px -5px 10px 0px #fafbff, 5px 5px 10px 0px rgba(166, 171, 189, 0.5); border-radius: 50px; padding: 16px 32px;`
   * Social Icon Buttons: `width: 70px; height: 70px; border-radius: 50px; box-shadow: -5px -5px 10px 0px #fafbff, 5px 5px 10px 0px rgba(166, 171, 189, 0.25);` Expanding hover circle: LinkedIn `#0077b5`, Twitter `#1da1f2`, Instagram `linear-gradient(45deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%)`, Facebook `#1877f2`. Icon color transitions `#1c1c1c` -> `#ffffff`. Spring: `stiffness: 500, damping: 60`.
   * Navbar: `box-shadow: inset -5px -5px 5px 0px #fafbff, inset 5px 5px 5px 0px rgba(166, 171, 189, 0.25); border-radius: 50px; max-width: 1360px;`
-  * Navbar Sliding Pill: `box-shadow: -3px -3px 8px #ffffff, 3px 3px 8px rgba(166, 171, 189, 0.35); background: rgba(255, 255, 255, 0.9); border-radius: 50px;` Spring: `stiffness: 400, damping: 25`.
+  * Navbar Sliding Pill: Glassmorphic translucent surface pill `bg-[#ecedf1]/60 backdrop-blur-md border border-white/80 shadow-[-2px_-2px_6px_rgba(255,255,255,0.9),2px_2px_8px_rgba(166,171,189,0.25),inset_0_1px_1px_rgba(255,255,255,0.8)] border-radius: 50px;` Spring: `stiffness: 400, damping: 25`.
 * **Typography:**
   * Primary Font: `Poppins` via `next/font/google` (`subsets: ["latin"]`, `display: "swap"`, weights: `300, 400, 500, 600, 700`)
   * Section Titles: 45px font size (Poppins 600)

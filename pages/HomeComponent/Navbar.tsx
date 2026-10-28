@@ -66,7 +66,7 @@ export const Navbar: React.FC = () => {
                         stiffness: 400,
                         damping: 25,
                       }}
-                      className="absolute inset-0 rounded-[50px] bg-white/90 shadow-[-3px_-3px_8px_#ffffff,3px_3px_8px_rgba(166,171,189,0.35)] border border-white/60 -z-10"
+                      className="absolute inset-0 rounded-[50px] bg-[#ecedf1]/60 backdrop-blur-md border border-white/80 shadow-[-2px_-2px_6px_rgba(255,255,255,0.9),2px_2px_8px_rgba(166,171,189,0.25),inset_0_1px_1px_rgba(255,255,255,0.8)] -z-10"
                     />
                   )}
                   <span className="relative z-10">{link.label}</span>
@@ -108,7 +108,7 @@ export const Navbar: React.FC = () => {
                   }}
                   className={`text-base px-4 py-2 rounded-[50px] transition-colors ${
                     isCurrent
-                      ? "text-[#46bab4] font-medium shadow-neu-badge"
+                      ? "text-[#46bab4] font-medium backdrop-blur-md bg-[#ecedf1]/60 border border-white/80 shadow-[-2px_-2px_6px_rgba(255,255,255,0.9),2px_2px_6px_rgba(166,171,189,0.25),inset_0_1px_1px_rgba(255,255,255,0.8)]"
                       : "text-[#1c1c1c] font-normal hover:text-[#46bab4]"
                   }`}
                 >
