@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { CheckCircle, WarningCircle } from "@phosphor-icons/react";
 import data from "@/content/data.json";
@@ -207,14 +208,12 @@ export const Contact: React.FC = () => {
                 </span>
               </button>
 
-              <a
-                href={ctaLink}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
                 className="text-xs sm:text-sm text-[#666666] hover:text-[#46bab4] underline transition-colors"
               >
-                Prefer direct email? Click here
-              </a>
+                Go to Contact Us Page →
+              </Link>
             </div>
           </form>
         </motion.div>

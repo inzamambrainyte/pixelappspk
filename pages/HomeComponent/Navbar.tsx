@@ -43,14 +43,12 @@ export const Navbar: React.FC = () => {
           </div>
 
           <div className="hidden md:flex items-center">
-            <a
+            <Link
               href={ctaLink}
-              target="_blank"
-              rel="noopener noreferrer"
               className="px-8 py-3.5 rounded-[50px] text-base font-normal text-white bg-[#46bab4] hover:bg-black transition-all duration-300 shadow-neu-button active:shadow-neu-button-inset"
             >
               {ctaText}
-            </a>
+            </Link>
           </div>
 
           <button
@@ -74,15 +72,13 @@ export const Navbar: React.FC = () => {
                 {link.label}
               </a>
             ))}
-            <a
+            <Link
               href={ctaLink}
-              target="_blank"
-              rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
               className="text-center px-8 py-3 rounded-[50px] text-base font-normal text-white bg-[#46bab4] hover:bg-black transition-all duration-300 shadow-neu-button"
             >
               {ctaText}
-            </a>
+            </Link>
           </div>
         )}
       </div>

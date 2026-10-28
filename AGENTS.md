@@ -69,6 +69,8 @@
 │   ├── globals.css         # Tailwind directives & custom neumorphism utilities
 │   ├── layout.tsx          # Root layout, Google Poppins font, SEO metadata & favicon
 │   ├── page.tsx            # Main page importing HomeComponent from @/pages/HomeComponent
+│   ├── contact/
+│   │   └── page.tsx        # Dedicated Contact Us SSG page
 │   ├── api/
 │   │   └── contact/
 │   │       └── route.ts    # POST contact route wrapped with error handling middleware
@@ -99,6 +101,7 @@
 │       ├── About.tsx       # Company story & App Store link
 │       ├── FAQ.tsx         # Interactive spring-animated accordion
 │       ├── Contact.tsx     # Neumorphic contact form with min/max validation & POST API integration
+│       ├── ContactView.tsx # Dedicated Contact Us page view with cards, form, and animations
 │       ├── LegalView.tsx   # Reusable Privacy & Terms view matching original site layout & Framer animations
 │       └── Footer.tsx      # Attribution, legal links, and social icon buttons
 ├── public/

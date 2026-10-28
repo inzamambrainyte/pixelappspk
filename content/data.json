@@ -33,7 +33,7 @@
       }
     ],
     "ctaText": "Contact Us",
-    "ctaLink": "https://mail.google.com/mail/?view=cm&fs=1&to=info@pixelappspk.com&su=Support%20Inquiry%20Chatbot%20Assistant"
+    "ctaLink": "/contact"
   },
   "Home": {
     "hero": {
@@ -173,7 +173,7 @@
     "title": "We'd Love to hear from you?",
     "description": "Have questions, need custom features, or want to explore an AI upgrade for your workflow? Reach out anytime.",
     "ctaText": "Contact Us",
-    "ctaLink": "https://mail.google.com/mail/?view=cm&fs=1&to=info@pixelappspk.com&su=Support%20Inquiry%20Chatbot%20Assistant",
+    "ctaLink": "/contact",
     "form": {
       "nameLabel": "Name",
       "namePlaceholder": "Your Full Name",
@@ -204,7 +204,7 @@
       },
       {
         "label": "Contact Us",
-        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=info@pixelappspk.com&su=Support%20Inquiry%20Chatbot%20Assistant"
+        "href": "/contact"
       },
       {
         "label": "Privacy",
