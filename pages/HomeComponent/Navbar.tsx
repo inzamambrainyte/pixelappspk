@@ -1,14 +1,64 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 import { List, X } from "@phosphor-icons/react";
 import data from "@/content/data.json";
 
 export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeHref, setActiveHref] = useState<string | null>(null);
+  const [hoveredHref, setHoveredHref] = useState<string | null>(null);
+  const pathname = usePathname();
+
   const { brandName, logoPath, navLinks, ctaText, ctaLink } = data.Navigation;
+
+  useEffect(() => {
+    if (pathname !== "/") {
+      setActiveHref(null);
+      return;
+    }
+
+    const sectionIds = ["services", "benefits", "about-us", "faq"];
+
+    const handleScroll = () => {
+      if (
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 60
+      ) {
+        setActiveHref("/#faq");
+        return;
+      }
+
+      if (window.scrollY < 120) {
+        setActiveHref(null);
+        return;
+      }
+
+      let current: string | null = null;
+      for (const id of sectionIds) {
+        const el = document.getElementById(id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 200 && rect.bottom > 200) {
+            current = `/#${id}`;
+            break;
+          }
+        }
+      }
+
+      setActiveHref(current);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [pathname]);
+
+  const highlightedHref = hoveredHref ?? activeHref;
 
   return (
     <header className="fixed top-4 left-0 right-0 z-50 px-4 sm:px-6 pointer-events-none">
@@ -30,16 +80,40 @@ export const Navbar: React.FC = () => {
             </span>
           </Link>
 
-          <div className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="px-6 py-3 rounded-[50px] text-base font-normal text-[#1c1c1c] hover:text-[#46bab4] transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
+          <div
+            className="hidden md:flex items-center gap-1 relative"
+            onMouseLeave={() => setHoveredHref(null)}
+          >
+            {navLinks.map((link) => {
+              const isCurrent = highlightedHref === link.href;
+
+              return (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  onMouseEnter={() => setHoveredHref(link.href)}
+                  onClick={() => setActiveHref(link.href)}
+                  className={`relative px-6 py-3 rounded-[50px] text-base transition-colors duration-200 select-none ${
+                    isCurrent
+                      ? "text-[#46bab4] font-medium"
+                      : "text-[#1c1c1c] font-normal hover:text-[#46bab4]"
+                  }`}
+                >
+                  {isCurrent && (
+                    <motion.span
+                      layoutId="navbar-sliding-pill"
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 25,
+                      }}
+                      className="absolute inset-0 rounded-[50px] bg-white/90 shadow-[-3px_-3px_8px_#ffffff,3px_3px_8px_rgba(166,171,189,0.35)] border border-white/60 -z-10"
+                    />
+                  )}
+                  <span className="relative z-10">{link.label}</span>
+                </Link>
+              );
+            })}
           </div>
 
           <div className="hidden md:flex items-center">
@@ -62,16 +136,27 @@ export const Navbar: React.FC = () => {
 
         {mobileMenuOpen && (
           <div className="md:hidden mt-2 p-5 bg-[#ecedf1] rounded-[25px] shadow-neu-card border border-white/60 flex flex-col gap-3">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-base font-normal text-[#1c1c1c] hover:text-[#46bab4] px-4 py-2 rounded-[50px] transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              const isCurrent = activeHref === link.href;
+
+              return (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => {
+                    setActiveHref(link.href);
+                    setMobileMenuOpen(false);
+                  }}
+                  className={`text-base px-4 py-2 rounded-[50px] transition-colors ${
+                    isCurrent
+                      ? "text-[#46bab4] font-medium shadow-neu-badge"
+                      : "text-[#1c1c1c] font-normal hover:text-[#46bab4]"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
             <Link
               href={ctaLink}
               onClick={() => setMobileMenuOpen(false)}
