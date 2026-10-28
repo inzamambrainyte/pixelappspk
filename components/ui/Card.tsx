@@ -33,7 +33,12 @@ const iconMap: Record<string, React.ElementType> = {
   PuzzlePiece,
 };
 
-export const Card: React.FC<CardItem> = ({ title, description, iconName, badge }) => {
+export const Card: React.FC<CardItem> = ({
+  title,
+  description,
+  iconName,
+  badge,
+}) => {
   const IconComponent = iconMap[iconName] || StarFour;
 
   return (
@@ -67,3 +72,4 @@ export const Card: React.FC<CardItem> = ({ title, description, iconName, badge }
 };
 
 export default Card;
+

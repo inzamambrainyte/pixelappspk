@@ -1,67 +1,26 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { CheckCircle, WarningCircle } from "@phosphor-icons/react";
+import { Input, Textarea, Button } from "@/components/ui";
+import { useContactForm } from "@/hooks";
 import data from "@/content/data.json";
 
 export const Contact: React.FC = () => {
   const { badge, title, description, form, ctaLink } = data.Contact;
 
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
+  const {
+    formData,
+    status,
+    feedbackMessage,
+    handleChange,
+    handleSubmit,
+  } = useContactForm({
+    defaultSuccessMessage: form?.successMessage,
+    defaultErrorMessage: form?.errorMessage,
   });
-
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [feedbackMessage, setFeedbackMessage] = useState("");
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setStatus("loading");
-    setFeedbackMessage("");
-
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const result = await response.json();
-
-      if (response.ok && result.success) {
-        setStatus("success");
-        setFeedbackMessage(form?.successMessage || "Message sent successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
-      } else {
-        setStatus("error");
-        setFeedbackMessage(result.error || form?.errorMessage || "Failed to send message.");
-      }
-    } catch {
-      setStatus("error");
-      setFeedbackMessage(form?.errorMessage || "An unexpected error occurred. Please try again.");
-    }
-  };
 
   return (
     <section id="contact" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
@@ -96,90 +55,54 @@ export const Contact: React.FC = () => {
             className="w-full max-w-xl flex flex-col gap-5 text-left"
           >
             <div className="flex flex-col sm:flex-row gap-5">
-              <div className="flex-1 flex flex-col gap-2">
-                <label
-                  htmlFor="name"
-                  className="text-sm font-medium text-[#1c1c1c]"
-                >
-                  {form?.nameLabel || "Name"}
-                </label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  required
-                  minLength={2}
-                  maxLength={50}
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder={form?.namePlaceholder || "Your Full Name"}
-                  className="w-full px-4 py-3 rounded-[18px] bg-[#ecedf1] text-[#1c1c1c] placeholder:text-[#8c909e] shadow-neu-badge focus:outline-none focus:ring-2 focus:ring-[#46bab4] transition-all text-sm sm:text-base border border-white/30"
-                />
-              </div>
-
-              <div className="flex-1 flex flex-col gap-2">
-                <label
-                  htmlFor="email"
-                  className="text-sm font-medium text-[#1c1c1c]"
-                >
-                  {form?.emailLabel || "Email"}
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required
-                  minLength={5}
-                  maxLength={100}
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder={form?.emailPlaceholder || "name@example.com"}
-                  className="w-full px-4 py-3 rounded-[18px] bg-[#ecedf1] text-[#1c1c1c] placeholder:text-[#8c909e] shadow-neu-badge focus:outline-none focus:ring-2 focus:ring-[#46bab4] transition-all text-sm sm:text-base border border-white/30"
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <label
-                htmlFor="subject"
-                className="text-sm font-medium text-[#1c1c1c]"
-              >
-                {form?.subjectLabel || "Subject"}
-              </label>
-              <input
-                id="subject"
-                name="subject"
+              <Input
+                label={form?.nameLabel || "Name"}
+                name="name"
                 type="text"
                 required
-                minLength={3}
-                maxLength={100}
-                value={formData.subject}
+                minLength={2}
+                maxLength={50}
+                value={formData.name}
                 onChange={handleChange}
-                placeholder={form?.subjectPlaceholder || "Subject of inquiry"}
-                className="w-full px-4 py-3 rounded-[18px] bg-[#ecedf1] text-[#1c1c1c] placeholder:text-[#8c909e] shadow-neu-badge focus:outline-none focus:ring-2 focus:ring-[#46bab4] transition-all text-sm sm:text-base border border-white/30"
+                placeholder={form?.namePlaceholder || "Your Full Name"}
+              />
+
+              <Input
+                label={form?.emailLabel || "Email"}
+                name="email"
+                type="email"
+                required
+                minLength={5}
+                maxLength={100}
+                value={formData.email}
+                onChange={handleChange}
+                placeholder={form?.emailPlaceholder || "name@example.com"}
               />
             </div>
 
-            <div className="flex flex-col gap-2">
-              <label
-                htmlFor="message"
-                className="text-sm font-medium text-[#1c1c1c]"
-              >
-                {form?.messageLabel || "Message"}
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                required
-                minLength={10}
-                maxLength={1000}
-                value={formData.message}
-                onChange={handleChange}
-                placeholder={form?.messagePlaceholder || "Tell us how we can help..."}
-                className="w-full px-4 py-3 rounded-[18px] bg-[#ecedf1] text-[#1c1c1c] placeholder:text-[#8c909e] shadow-neu-badge focus:outline-none focus:ring-2 focus:ring-[#46bab4] transition-all text-sm sm:text-base border border-white/30 resize-none"
-              />
-            </div>
+            <Input
+              label={form?.subjectLabel || "Subject"}
+              name="subject"
+              type="text"
+              required
+              minLength={3}
+              maxLength={100}
+              value={formData.subject}
+              onChange={handleChange}
+              placeholder={form?.subjectPlaceholder || "Subject of inquiry"}
+            />
+
+            <Textarea
+              label={form?.messageLabel || "Message"}
+              name="message"
+              rows={4}
+              required
+              minLength={10}
+              maxLength={1000}
+              value={formData.message}
+              onChange={handleChange}
+              placeholder={form?.messagePlaceholder || "Tell us how we can help..."}
+            />
 
             {status === "success" && (
               <div className="p-4 rounded-[18px] bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 flex items-center gap-3 text-sm">
@@ -196,20 +119,17 @@ export const Contact: React.FC = () => {
             )}
 
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
-              <button
+              <Button
                 type="submit"
-                disabled={status === "loading"}
-                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-[50px] text-base font-normal text-white bg-[#46bab4] hover:bg-black disabled:opacity-60 transition-all duration-300 shadow-neu-button active:shadow-neu-button-inset cursor-pointer"
+                isLoading={status === "loading"}
+                loadingText={form?.submittingButton || "Sending..."}
+                className="w-full sm:w-auto"
               >
-                <span>
-                  {status === "loading"
-                    ? form?.submittingButton || "Sending..."
-                    : form?.submitButton || "Send Message"}
-                </span>
-              </button>
+                {form?.submitButton || "Send Message"}
+              </Button>
 
               <Link
-                href="/contact"
+                href={ctaLink || "/contact"}
                 className="text-xs sm:text-sm text-[#666666] hover:text-[#46bab4] underline transition-colors"
               >
                 Go to Contact Us Page →

@@ -67,8 +67,8 @@
 /
 ├── app/
 │   ├── globals.css         # Tailwind directives & custom neumorphism utilities
-│   ├── layout.tsx          # Root layout, Google Poppins font, SEO metadata & favicon
-│   ├── page.tsx            # Main page importing HomeComponent from @/pages/HomeComponent
+│   ├── layout.tsx          # Root layout, Google Poppins font, SEO metadata, Navbar & Footer
+│   ├── page.tsx            # Main page directly rendering Hero, Features, Benefits, About, FAQ
 │   ├── contact/
 │   │   └── page.tsx        # Dedicated Contact Us SSG page
 │   ├── api/
@@ -78,10 +78,20 @@
 │   │   └── page.tsx        # Privacy policy route
 │   └── terms/
 │       └── page.tsx        # Terms & conditions route
+├── components/
+│   └── ui/
+│       ├── Button.tsx      # Reusable neumorphic Button component
+│       ├── Card.tsx        # Single reusable neumorphic Card component with icon resolution
+│       ├── Input.tsx       # Reusable neumorphic Input component
+│       ├── Textarea.tsx    # Reusable neumorphic Textarea component
+│       └── index.ts        # UI component export barrel
 ├── content/
 │   └── data.json           # Single consolidated JSON file with all website copy and links
 ├── controllers/
 │   └── contactController.ts# Request sanitization, field validation and response mapping
+├── hooks/
+│   ├── useContactForm.ts   # Custom hook controlling contact form state, validation, and submission
+│   └── index.ts            # Hooks export barrel
 ├── lib/
 │   ├── helpers/
 │   │   └── regex.ts        # Reusable regex patterns and string sanitization helpers
@@ -91,9 +101,8 @@
 ├── models/
 │   └── Contact.ts          # Mongoose Contact schema and model for contacts collection
 ├── pages/
+│   ├── 404.tsx             # Pages Router 404 fallback
 │   └── HomeComponent/
-│       ├── index.tsx       # Root wrapper rendering all sections
-│       ├── Card.tsx        # Single reusable neumorphic Card component with icon resolution
 │       ├── Navbar.tsx      # Fixed inset-shadow neumorphic navbar matching original design
 │       ├── Hero.tsx        # Hero section matching original design schema
 │       ├── Features.tsx    # 6 feature cards rendered via .map()
@@ -107,7 +116,8 @@
 ├── public/
 │   └── logo.png            # Official Pixel Apps brand logo
 ├── services/
-│   └── contactService.ts   # Business logic and database persistence service
+│   ├── contactApiService.ts# Client-side API service invoking /api/contact
+│   └── contactService.ts   # Server-side business logic and database persistence service
 ├── types/
 │   ├── contact.ts          # Contact form and document data interfaces
 │   ├── home.ts             # TypeScript interfaces and data contracts

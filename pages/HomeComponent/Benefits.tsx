@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Card } from "./Card";
+import { Card } from "@/components/ui/Card";
 import data from "@/content/data.json";
 
 export const Benefits: React.FC = () => {
