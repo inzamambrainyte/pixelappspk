@@ -1,4 +1,4 @@
 import { withErrorHandler } from "@/lib/middleware/errorHandler";
-import { ContactController } from "@/controllers/contactController";
+import { ContactController } from "@/controllers/controllers.contact";
 
 export const POST = withErrorHandler(ContactController.handleSubmission);

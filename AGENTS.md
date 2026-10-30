@@ -61,7 +61,9 @@
 * **Root `/hooks/` Directory**: All complex UI state, scroll-spy, active navigation, and form state logic MUST be extracted into custom hooks in `/hooks/` (e.g. `useContactForm.ts`, `useNavbarNavigation.ts`), re-exported via `/hooks/index.ts`.
 * **Separate Backend & Frontend Services**:
   * Frontend API calls reside in `/services/frontend/contactService.ts`. Because frontend and backend are in the same Next.js application, fetch calls directly invoke `/api/contact` without any redundant base URL prefix.
-  * Backend business logic and Mongoose persistence reside in `/services/backend/contactService.ts`.
+  * Backend controllers reside in `/controllers/controllers.contact.ts` to validate and sanitize incoming requests.
+  * Backend business logic and Mongoose persistence reside in `/services/backend/services.contact.ts`.
+  * Email notifications reside in `/services/backend/services.mail.ts`, triggered immediately upon contact creation using `nodemailer` with `MAIL_USER` and `MAIL_PASS` environment variables.
 * **Central Data Store**: All website copy, texts, links, questions, FAQs, and legal terms reside in a **single JSON file** at `/content/data.json`.
 * **Root `/types/` Folder**: All data contract interfaces, API response types, and shared types reside strictly in `/types/` (`types/home.ts`, `types/contact.ts`, `types/index.ts`). No types should be defined inline in services or components.
 
@@ -129,13 +131,16 @@
 │       └── index.ts        # UI component export barrel
 ├── public/
 │   └── logo.png            # Official Pixel Apps brand logo
+├── controllers/
+│   └── controllers.contact.ts # Request validation & sanitization controller
 ├── services/
 │   ├── backend/
-│   │   ├── contactService.ts # Server-side business logic and database persistence service
+│   │   ├── services.contact.ts # Server-side business logic and database persistence service
+│   │   ├── services.mail.ts    # Server-side Nodemailer email notification dispatch
 │   │   └── index.ts
-│   ├── frontend/
-│   │   ├── contactService.ts # Client-side API service invoking /api/contact directly
-│   │   └── index.ts
+│   └── frontend/
+│       ├── contactService.ts   # Client-side API service invoking /api/contact directly
+│       └── index.ts
 │   └── index.ts
 ├── types/
 │   ├── contact.ts          # Contact form, API response, and document data interfaces

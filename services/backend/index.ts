@@ -1,2 +1,2 @@
-export * from "./contactService";
-
+export * from "./services.contact";
+export * from "./services.mail";

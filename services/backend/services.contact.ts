@@ -1,6 +1,7 @@
 import { connectToDatabase } from "@/lib/mongodb";
 import { Contact, ContactDocument } from "@/models/Contact";
 import { ContactFormData } from "@/types";
+import { MailService } from "./services.mail";
 
 export class ContactService {
   public static async createContactSubmission(
@@ -14,6 +15,8 @@ export class ContactService {
       subject: data.subject,
       message: data.message,
     });
+
+    await MailService.sendContactNotification(data);
 
     return contact;
   }
