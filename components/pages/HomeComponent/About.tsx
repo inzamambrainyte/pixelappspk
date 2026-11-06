@@ -18,13 +18,17 @@ export const About: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="bg-[#ecedf1] rounded-[25px] p-8 sm:p-12 md:p-16 shadow-neu-card border border-white/50 text-center flex flex-col items-center"
         >
-          <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#ecedf1] shadow-neu-badge text-xs font-semibold uppercase tracking-wider text-[#46bab4] mb-6">
-            {badge}
-          </div>
+          {badge && (
+            <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#ecedf1] shadow-neu-badge text-xs font-semibold uppercase tracking-wider text-[#46bab4] mb-6">
+              {badge}
+            </div>
+          )}
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1c1c1c] mb-8">
-            {title}
-          </h2>
+          {title && (
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1c1c1c] mb-8">
+              {title}
+            </h2>
+          )}
 
           <div className="space-y-6 text-[#4d4d4d] text-base sm:text-lg leading-relaxed max-w-2xl text-center mb-10">
             {paragraphs.map((p, idx) => (

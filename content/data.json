@@ -1,10 +1,10 @@
 {
   "config": {
     "siteName": "Pixel Apps",
-    "metaTitle": "Pixel Apps",
-    "metaDescription": "Pixel Apps is a Pakistan-based mobile app product company creating innovative, user-friendly apps for global audiences. We design and build high-quality solutions that blend technology, creativity, and seamless user experiences.",
-    "ogTitle": "Pixel Apps",
-    "ogDescription": "Pixel Apps is a Pakistan-based mobile app product company creating innovative, user-friendly apps for global audiences.",
+    "metaTitle": "AI Chatbot | Dedicated Neural Intelligence by Pixel Apps",
+    "metaDescription": "Experience AI Chatbot by Pixel Apps, an advanced conversational companion built for neural dialogue, deep document intelligence, and rapid content creation.",
+    "ogTitle": "AI Chatbot | Your Dedicated Neural Assistant",
+    "ogDescription": "Accelerate your thinking and writing with multi-turn conversational intelligence, instant PDF summarization, and creative prompt-to-image synthesis.",
     "ogImage": "/logo.png",
     "favicon": "/logo.png",
     "siteUrl": "https://pixelappspk.com",
@@ -38,132 +38,148 @@
   "Home": {
     "hero": {
       "title": "AI Chatbot",
-      "description": "AI Chatbot Assistant is a smart AI companion powered by GPT-4 and GPT-5, helping you write, create, and solve tasks instantly. Your intelligent productivity partner—anytime, anywhere."
+      "description": "AI Chatbot by Pixel Apps is a dedicated conversational companion engineered for effortless writing, instant document summarization, and intelligent task resolution. Powered by advanced language models, it remembers your context and provides clear, actionable answers anytime you need them."
     },
     "features": {
-      "title": "Features we Offer",
-      "subtitle": "Empower your business with AI-driven speed, efficiency, and personalization",
+      "title": "Next-Gen Conversational Intelligence",
+      "subtitle": "Harness advanced neural models to write faster, synthesize deeper, and brainstorm without limitations",
       "items": [
         {
           "id": "feature-1",
-          "title": "AI Content Generation",
-          "description": "Effortlessly generate blogs, emails, captions, reports, ideas, and more with smart context understanding.",
-          "iconName": "StarFour"
+          "title": "Context-Aware Neural Dialogue",
+          "badge": "Neural Chat",
+          "description": "Experience fluid multi-turn discussions that remember earlier prompts, constraints, and project details.",
+          "iconName": "Chats"
         },
         {
           "id": "feature-2",
-          "title": "Document & PDF Assistance",
-          "description": "Summarize long documents, extract key points, rewrite text, and analyze content instantly.",
+          "title": "Deep Document Intelligence",
+          "badge": "PDF Reader",
+          "description": "Upload complex PDF contracts, academic research, and books to query facts and generate briefs.",
           "iconName": "FileDoc"
         },
         {
           "id": "feature-3",
-          "title": "Memory-Based Conversations",
-          "description": "Continue seamless chats with context retention for long workflows and ongoing tasks.",
-          "iconName": "Chats"
+          "title": "Adaptive Tone & Style Matching",
+          "badge": "Copywriting",
+          "description": "Toggle effortlessly between formal executive correspondence, creative copywriting, and technical docs.",
+          "iconName": "StarFour"
         },
         {
           "id": "feature-4",
-          "title": "AI Image Generation",
-          "description": "Create stunning images, logos, concept art, and social media visuals with simple prompts.",
-          "iconName": "Image"
+          "title": "Iterative Code Debugger & Refactorer",
+          "badge": "Developer Mode",
+          "description": "Generate, explain, and troubleshoot code across Python, TypeScript, Swift, Go, and SQL.",
+          "iconName": "Laptop"
         },
         {
           "id": "feature-5",
-          "title": "Chat History & Saved Sessions",
-          "description": "Revisit past conversations and save important chats for future use.",
-          "iconName": "Timer"
+          "title": "Prompt-to-Image Visual Studio",
+          "badge": "Image Gen",
+          "description": "Convert imaginative natural-language descriptions into photorealistic concept art and illustrations.",
+          "iconName": "Image"
         },
         {
           "id": "feature-6",
-          "title": "Multi-Platform Access",
-          "badge": "(Coming soon)",
-          "description": "Access the assistant from macOS, web, and upcoming mobile apps for a smooth cross-platform experience.",
-          "iconName": "Laptop"
+          "title": "Unlimited Conversational Threading",
+          "badge": "Organization",
+          "description": "Branch separate discussions for different clients, personal projects, and research inquiries.",
+          "iconName": "Timer"
         }
       ]
     },
     "benefits": {
-      "title": "Benefits of Using the App",
-      "subtitle": "Unlock business growth with innovative AI-driven capabilities",
+      "title": "Transforming How You Think & Write",
+      "subtitle": "Break through creative roadblocks and multiply your daily intellectual throughput",
       "items": [
         {
           "id": "benefit-1",
-          "title": "Boost Productivity",
-          "description": "Finish tasks faster with instant assistance for writing, coding, analysis, and creative work.",
-          "iconName": "ChartLineUp"
+          "title": "Conquer Blank-Page Anxiety",
+          "badge": "Drafting",
+          "description": "Generate comprehensive first drafts, outlines, and email responses within five seconds.",
+          "iconName": "Lightning"
         },
         {
           "id": "benefit-2",
-          "title": "Save Hours Every Day",
-          "description": "From emails to complex problem-solving, get immediate, reliable results.",
+          "title": "Distill 100 Pages in Seconds",
+          "badge": "Speed Reading",
+          "description": "Bypass manual document scanning by asking targeted questions directly to your uploaded files.",
           "iconName": "Wallet"
         },
         {
           "id": "benefit-3",
-          "title": "Stay Organized",
-          "description": "Keep everything in one place with saved chats, project-wise conversations, and multi-device access.",
+          "title": "24/7 On-Demand Thought Partner",
+          "badge": "Brainstorming",
+          "description": "Bounce startup ideas, test hypotheses, and rehearse difficult negotiations with an unbiased mentor.",
           "iconName": "UserCircle"
         },
         {
           "id": "benefit-4",
-          "title": "Scale Your Capabilities",
-          "description": "Perform like a full team—researcher, writer, designer, and strategist—all in one app.",
+          "title": "Rapid Multilingual Fluency",
+          "badge": "Global Comms",
+          "description": "Translate, localize, and polish communications across more than 50 languages with native nuance.",
           "iconName": "ArrowsOut"
         },
         {
           "id": "benefit-5",
-          "title": "Work Smarter, Not Harder",
-          "description": "Let AI handle repetitive tasks while you focus on strategy and execution.",
-          "iconName": "Lightning"
+          "title": "Complex Topic Demystification",
+          "badge": "Simplification",
+          "description": "Request simple analogies, bulleted breakdowns, or technical deep-dives on any subject imaginable.",
+          "iconName": "ChartLineUp"
         },
         {
           "id": "benefit-6",
-          "title": "Adaptive Solutions",
-          "description": "Benefit from AI that evolves continuously to match your changing business needs.",
+          "title": "Searchable Knowledge Archive",
+          "badge": "Recall",
+          "description": "Revisit past answers, code snippets, and creative breakthroughs instantly using full-text search.",
           "iconName": "PuzzlePiece"
         }
       ]
     },
     "about": {
-      "badge": "About",
-      "title": "Who We Are",
+      "badge": "About Pixel Apps",
+      "title": "",
       "paragraphs": [
-        "Pixel Apps is a forward-thinking digital products company dedicated to creating smart, simple, and impactful software experiences. We specialize in next-generation AI tools, productivity apps, and utility solutions designed to empower users and businesses worldwide.",
-        "With a strong focus on innovation, design excellence, and user-first experiences, Pixel Apps continues to push the boundaries of what technology can do—turning powerful ideas into everyday solutions that make life easier, faster, and more intelligent."
+        "Pixel Apps is an independent software studio committed to designing intuitive and accessible artificial intelligence applications. We believe that interacting with advanced AI should feel natural, responsive, and genuinely empowering for everyone.",
+        "With AI Chatbot, our team focused on crafting a streamlined conversational experience that removes friction from daily knowledge work. By combining frontier language models with elegant interface design, Pixel Apps gives creators, professionals, and lifelong learners an intelligent partner they can rely on every single day."
       ],
-      "ctaText": "View Our Product",
-      "ctaLink": "https://apps.apple.com/by/app/whiteboard-draw-teach-learn/id6807375389"
+      "ctaText": "Discover the App",
+      "ctaLink": "https://apps.apple.com/us/developer/pixel-apps-smc/id1840403160"
     },
     "faq": {
       "badge": "FAQ",
-      "title": "Your Questions, Answered",
-      "subtitle": "Answers to your most common questions about our AI services",
+      "title": "AI Chatbot Knowledge Base",
+      "subtitle": "Answers regarding neural architecture, context length, document security, and account setup",
       "items": [
         {
           "id": "faq-1",
-          "question": "What is AI automation and how can it help my business?",
-          "answer": "AI automation uses intelligent systems to handle repetitive tasks, reduce errors, and improve efficiency—allowing you to focus on growth and innovation."
+          "question": "How does AI Chatbot maintain context across long conversation threads?",
+          "answer": "AI Chatbot employs a state-of-the-art context window that dynamically indexes prior messages within the active thread, ensuring uninterrupted reasoning across long sessions."
         },
         {
           "id": "faq-2",
-          "question": "How long does it take to build a custom solution?",
-          "answer": "Most projects take 4–8 weeks, depending on complexity and your specific requirements."
+          "question": "What file formats can I upload for document analysis?",
+          "answer": "You can upload standard PDF documents, Word DOCX files, plain text TXT files, and Markdown documents up to 50MB per file for instant analysis."
         },
         {
           "id": "faq-3",
-          "question": "Can you integrate AI with my existing systems?",
-          "answer": "Yes, we design AI solutions that seamlessly connect with your current tools and workflows."
+          "question": "Are my proprietary prompts used to train public AI models?",
+          "answer": "No. Pixel Apps enforces strict data isolation policies. Your queries, uploaded documents, and generated responses are never used to train public machine learning models."
         },
         {
           "id": "faq-4",
-          "question": "What industries benefit most from your solutions?",
-          "answer": "Our AI tools work across industries including retail, healthcare, logistics, finance, education, and more."
+          "question": "Can AI Chatbot generate code for complete applications?",
+          "answer": "AI Chatbot can generate architectural scaffolding, API integrations, frontend UI components, and complete script modules, along with step-by-step setup instructions."
         },
         {
           "id": "faq-5",
-          "question": "How do I get started with an AI-powered business upgrade?",
-          "answer": "Simply contact our team—we’ll assess your needs, create a plan, and start building your solution."
+          "question": "How frequently is the underlying AI model updated?",
+          "answer": "We continuously update our inference pipelines with the latest model releases from OpenAI and leading frontier labs, ensuring access to cutting-edge reasoning."
+        },
+        {
+          "id": "faq-6",
+          "question": "What should I do if AI Chatbot provides an incomplete response?",
+          "answer": "You can simply type continue, ask for clarification, or refine your prompt. The assistant picks up precisely where it left off within the active thread."
         }
       ]
     }
