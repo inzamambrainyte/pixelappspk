@@ -1,15 +1,15 @@
 {
   "config": {
     "siteName": "Pixel Apps",
-    "metaTitle": "AI Chatbot | Dedicated Neural Intelligence by Pixel Apps",
-    "metaDescription": "Experience AI Chatbot by Pixel Apps, an advanced conversational companion built for neural dialogue, deep document intelligence, and rapid content creation.",
-    "ogTitle": "AI Chatbot | Your Dedicated Neural Assistant",
-    "ogDescription": "Accelerate your thinking and writing with multi-turn conversational intelligence, instant PDF summarization, and creative prompt-to-image synthesis.",
+    "metaTitle": "AI Chatbot | Native macOS AI Assistant by Pixel Apps",
+    "metaDescription": "AI Chatbot is a sleek, native macOS application integrating OpenAI, Google Gemini, and xAI Grok for fast, context-aware conversations directly on your desktop.",
+    "ogTitle": "AI Chatbot | Sleek Native Desktop AI for Mac",
+    "ogDescription": "Experience fast, intelligent, and context-aware conversations on macOS with OpenAI, Gemini, and Grok in one unified desktop interface.",
     "ogImage": "/logo.png",
     "favicon": "/logo.png",
     "siteUrl": "https://pixelappspk.com",
     "locale": "en_US",
-    "contactEmail": "info@pixelappspk.com"
+    "contactEmail": "amir.support@icloud.com"
   },
   "Navigation": {
     "brandName": "Pixel Apps",
@@ -38,100 +38,100 @@
   "Home": {
     "hero": {
       "title": "AI Chatbot",
-      "description": "AI Chatbot by Pixel Apps is a dedicated conversational companion engineered for effortless writing, instant document summarization, and intelligent task resolution. Powered by advanced language models, it remembers your context and provides clear, actionable answers anytime you need them."
+      "description": "AI Chatbot is a sleek, native macOS application that brings the power of artificial intelligence directly to your desktop. Integrating public APIs from OpenAI, Google Gemini, and xAI Grok, it delivers fast, intelligent, and context-aware conversations to brainstorm ideas, write emails, learn new concepts, and accelerate daily productivity."
     },
     "features": {
-      "title": "Next-Gen Conversational Intelligence",
-      "subtitle": "Harness advanced neural models to write faster, synthesize deeper, and brainstorm without limitations",
+      "title": "Key macOS Features",
+      "subtitle": "Designed specifically for Mac users with native speed, multi-service intelligence, and distraction-free elegance",
       "items": [
         {
           "id": "feature-1",
-          "title": "Context-Aware Neural Dialogue",
-          "badge": "Neural Chat",
-          "description": "Experience fluid multi-turn discussions that remember earlier prompts, constraints, and project details.",
-          "iconName": "Chats"
-        },
-        {
-          "id": "feature-2",
-          "title": "Deep Document Intelligence",
-          "badge": "PDF Reader",
-          "description": "Upload complex PDF contracts, academic research, and books to query facts and generate briefs.",
-          "iconName": "FileDoc"
-        },
-        {
-          "id": "feature-3",
-          "title": "Adaptive Tone & Style Matching",
-          "badge": "Copywriting",
-          "description": "Toggle effortlessly between formal executive correspondence, creative copywriting, and technical docs.",
-          "iconName": "StarFour"
-        },
-        {
-          "id": "feature-4",
-          "title": "Iterative Code Debugger & Refactorer",
-          "badge": "Developer Mode",
-          "description": "Generate, explain, and troubleshoot code across Python, TypeScript, Swift, Go, and SQL.",
+          "title": "Lightweight macOS Native Engine",
+          "badge": "Apple Silicon",
+          "description": "Optimized specifically for Mac architecture with a minimal memory footprint and instant responsiveness.",
           "iconName": "Laptop"
         },
         {
+          "id": "feature-2",
+          "title": "Multi-Service Intelligence",
+          "badge": "OpenAI, Gemini & Grok",
+          "description": "Access multiple third-party AI services through their public APIs within one unified desktop client.",
+          "iconName": "Cpu"
+        },
+        {
+          "id": "feature-3",
+          "title": "Multi-Threaded Chat History",
+          "badge": "Organized",
+          "description": "Organize conversations into distinct threads by project or topic with fast, searchable local archives.",
+          "iconName": "Timer"
+        },
+        {
+          "id": "feature-4",
+          "title": "Keyboard Shortcuts for Speed",
+          "badge": "Hotkeys",
+          "description": "Summon your assistant, navigate sessions, and copy outputs rapidly using intuitive macOS key commands.",
+          "iconName": "Command"
+        },
+        {
           "id": "feature-5",
-          "title": "Prompt-to-Image Visual Studio",
-          "badge": "Image Gen",
-          "description": "Convert imaginative natural-language descriptions into photorealistic concept art and illustrations.",
-          "iconName": "Image"
+          "title": "Context-Aware Conversations",
+          "badge": "Smart Flow",
+          "description": "Enjoy natural, multi-turn dialogues that remember your requirements and adapt to your preferred tone.",
+          "iconName": "Chats"
         },
         {
           "id": "feature-6",
-          "title": "Unlimited Conversational Threading",
-          "badge": "Organization",
-          "description": "Branch separate discussions for different clients, personal projects, and research inquiries.",
-          "iconName": "Timer"
+          "title": "Dark Mode & Distraction-Free UI",
+          "badge": "Mac Interface",
+          "description": "A clean, modern interface with native dark mode support designed to keep you focused in your creative zone.",
+          "iconName": "StarFour"
         }
       ]
     },
     "benefits": {
-      "title": "Transforming How You Think & Write",
-      "subtitle": "Break through creative roadblocks and multiply your daily intellectual throughput",
+      "title": "Designed for the Mac Workflow",
+      "subtitle": "Experience how a native desktop companion streamlines your daily intellectual throughput",
       "items": [
         {
           "id": "benefit-1",
-          "title": "Conquer Blank-Page Anxiety",
-          "badge": "Drafting",
-          "description": "Generate comprehensive first drafts, outlines, and email responses within five seconds.",
+          "title": "Instant Desktop Accessibility",
+          "badge": "Frictionless",
+          "description": "Summon intelligent conversational support directly on your screen without opening browser tabs.",
           "iconName": "Lightning"
         },
         {
           "id": "benefit-2",
-          "title": "Distill 100 Pages in Seconds",
-          "badge": "Speed Reading",
-          "description": "Bypass manual document scanning by asking targeted questions directly to your uploaded files.",
-          "iconName": "Wallet"
-        },
-        {
-          "id": "benefit-3",
-          "title": "24/7 On-Demand Thought Partner",
-          "badge": "Brainstorming",
-          "description": "Bounce startup ideas, test hypotheses, and rehearse difficult negotiations with an unbiased mentor.",
-          "iconName": "UserCircle"
-        },
-        {
-          "id": "benefit-4",
-          "title": "Rapid Multilingual Fluency",
-          "badge": "Global Comms",
-          "description": "Translate, localize, and polish communications across more than 50 languages with native nuance.",
+          "title": "Multi-Model Perspective",
+          "badge": "Flexibility",
+          "description": "Compare viewpoints and switch between OpenAI, Gemini, and Grok depending on your analytical needs.",
           "iconName": "ArrowsOut"
         },
         {
+          "id": "benefit-3",
+          "title": "Effortless Email & Writing",
+          "badge": "Daily Writing",
+          "description": "Draft polished correspondence, summarize drafts, and craft professional communications in seconds.",
+          "iconName": "FileDoc"
+        },
+        {
+          "id": "benefit-4",
+          "title": "Deep Learning & Brainstorming",
+          "badge": "Exploration",
+          "description": "Explore complex subjects, test hypotheses, and satisfy curiosity with structured conversational answers.",
+          "iconName": "UserCircle"
+        },
+        {
           "id": "benefit-5",
-          "title": "Complex Topic Demystification",
-          "badge": "Simplification",
-          "description": "Request simple analogies, bulleted breakdowns, or technical deep-dives on any subject imaginable.",
-          "iconName": "ChartLineUp"
+          "title": "Distraction-Free Focus",
+          "badge": "Minimalist",
+          "description": "Work comfortably in a clean environment that respects system dark mode and macOS ergonomics.",
+          "iconName": "Wallet"
         },
         {
           "id": "benefit-6",
-          "title": "Searchable Knowledge Archive",
-          "badge": "Recall",
-          "description": "Revisit past answers, code snippets, and creative breakthroughs instantly using full-text search.",
+          "title": "Independent & Transparent",
+          "badge": "Public APIs",
+          "description": "Built independently by Pixel Apps using public APIs with zero hidden background tracking.",
           "iconName": "PuzzlePiece"
         }
       ]
@@ -140,46 +140,46 @@
       "badge": "About Pixel Apps",
       "title": "",
       "paragraphs": [
-        "Pixel Apps is an independent software studio committed to designing intuitive and accessible artificial intelligence applications. We believe that interacting with advanced AI should feel natural, responsive, and genuinely empowering for everyone.",
-        "With AI Chatbot, our team focused on crafting a streamlined conversational experience that removes friction from daily knowledge work. By combining frontier language models with elegant interface design, Pixel Apps gives creators, professionals, and lifelong learners an intelligent partner they can rely on every single day."
+        "Pixel Apps is an independent software studio committed to designing intuitive and accessible applications for the modern desktop. We believe that interacting with advanced artificial intelligence should feel natural, responsive, and genuinely empowering for everyday computer users.",
+        "AI Chatbot is our sleek, native macOS companion engineered to bring frontier AI models from OpenAI, Google Gemini, and xAI Grok straight to your desktop. With a lightweight footprint, distraction-free design, and native keyboard shortcuts, Pixel Apps gives Mac users an intelligent partner they can rely on throughout their day."
       ],
-      "ctaText": "Discover the App",
-      "ctaLink": "https://apps.apple.com/us/developer/pixel-apps-smc/id1840403160"
+      "ctaText": "Download on the Mac App Store",
+      "ctaLink": "https://apps.apple.com/us/app/ai-chatbot-ask-ai-assistant/id6753002341?mt=12"
     },
     "faq": {
       "badge": "FAQ",
-      "title": "AI Chatbot Knowledge Base",
-      "subtitle": "Answers regarding neural architecture, context length, document security, and account setup",
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about AI Chatbot, model integrations, macOS compatibility, and subscriptions",
       "items": [
         {
           "id": "faq-1",
-          "question": "How does AI Chatbot maintain context across long conversation threads?",
-          "answer": "AI Chatbot employs a state-of-the-art context window that dynamically indexes prior messages within the active thread, ensuring uninterrupted reasoning across long sessions."
+          "question": "What AI services are integrated into AI Chatbot?",
+          "answer": "AI Chatbot integrates multiple third-party AI services including OpenAI, Google Gemini, and xAI Grok through their public APIs, providing diverse intelligence engines in one desktop app."
         },
         {
           "id": "faq-2",
-          "question": "What file formats can I upload for document analysis?",
-          "answer": "You can upload standard PDF documents, Word DOCX files, plain text TXT files, and Markdown documents up to 50MB per file for instant analysis."
+          "question": "Is AI Chatbot an official app from OpenAI, Google, or xAI?",
+          "answer": "No. This macOS application is independently developed by Pixel Apps and is not an official app of OpenAI, Google, or xAI. It is not endorsed, sponsored, or affiliated with any of these companies."
         },
         {
           "id": "faq-3",
-          "question": "Are my proprietary prompts used to train public AI models?",
-          "answer": "No. Pixel Apps enforces strict data isolation policies. Your queries, uploaded documents, and generated responses are never used to train public machine learning models."
+          "question": "Is the application lightweight and optimized for macOS?",
+          "answer": "Yes. AI Chatbot is built natively for macOS with a minimal memory footprint, full Apple Silicon and Intel optimization, smooth performance, and native dark mode support."
         },
         {
           "id": "faq-4",
-          "question": "Can AI Chatbot generate code for complete applications?",
-          "answer": "AI Chatbot can generate architectural scaffolding, API integrations, frontend UI components, and complete script modules, along with step-by-step setup instructions."
+          "question": "How do keyboard shortcuts work in AI Chatbot?",
+          "answer": "The app includes intuitive macOS keyboard shortcuts allowing you to summon the assistant, create new chat threads, navigate history, and copy responses without lifting your hands from the keyboard."
         },
         {
           "id": "faq-5",
-          "question": "How frequently is the underlying AI model updated?",
-          "answer": "We continuously update our inference pipelines with the latest model releases from OpenAI and leading frontier labs, ensuring access to cutting-edge reasoning."
+          "question": "Can I manage multiple chat threads and review my history?",
+          "answer": "Yes. You can create separate conversation threads for distinct topics, projects, or creative brainstorms, with complete searchable history saved locally on your Mac."
         },
         {
           "id": "faq-6",
-          "question": "What should I do if AI Chatbot provides an incomplete response?",
-          "answer": "You can simply type continue, ask for clarification, or refine your prompt. The assistant picks up precisely where it left off within the active thread."
+          "question": "How do subscriptions and billing work?",
+          "answer": "AI Chatbot offers auto-renewing subscriptions for unlimited premium access. Payment is charged to your Apple ID account upon purchase confirmation, and subscriptions can be managed or canceled anytime in your Mac App Store account settings."
         }
       ]
     }
@@ -361,7 +361,7 @@
       },
       {
         "type": "paragraph",
-        "text": "If you have contacted us directly or believe that we possess personal information relating to you, you may contact us at info@pixelappspk.com to request information or deletion, where applicable."
+        "text": "If you have contacted us directly or believe that we possess personal information relating to you, you may contact us at amir.support@icloud.com to request information or deletion, where applicable."
       },
       {
         "type": "paragraph",
@@ -377,7 +377,7 @@
       },
       {
         "type": "paragraph",
-        "text": "If you are a parent or legal guardian and believe that a child has provided personal information directly to the Service Provider, please contact us at info@pixelappspk.com, and we will take appropriate steps to address the request."
+        "text": "If you are a parent or legal guardian and believe that a child has provided personal information directly to the Service Provider, please contact us at amir.support@icloud.com, and we will take appropriate steps to address the request."
       },
       {
         "type": "paragraph",
@@ -461,7 +461,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Email: info@pixelappspk.com"
+        "text": "Email: amir.support@icloud.com"
       }
     ]
   },
@@ -839,7 +839,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Email: info@pixelappspk.com"
+        "text": "Email: amir.support@icloud.com"
       }
     ]
   }
