@@ -9,7 +9,7 @@
     "favicon": "/logo.png",
     "siteUrl": "https://pixelappspk.com",
     "locale": "en_US",
-    "contactEmail": "amir.support@icloud.com"
+    "contactEmail": "support@pixelappspk.com"
   },
   "Navigation": {
     "brandName": "Pixel Apps",
@@ -361,7 +361,7 @@
       },
       {
         "type": "paragraph",
-        "text": "If you have contacted us directly or believe that we possess personal information relating to you, you may contact us at amir.support@icloud.com to request information or deletion, where applicable."
+        "text": "If you have contacted us directly or believe that we possess personal information relating to you, you may contact us at support@pixelappspk.com to request information or deletion, where applicable."
       },
       {
         "type": "paragraph",
@@ -377,7 +377,7 @@
       },
       {
         "type": "paragraph",
-        "text": "If you are a parent or legal guardian and believe that a child has provided personal information directly to the Service Provider, please contact us at amir.support@icloud.com, and we will take appropriate steps to address the request."
+        "text": "If you are a parent or legal guardian and believe that a child has provided personal information directly to the Service Provider, please contact us at support@pixelappspk.com, and we will take appropriate steps to address the request."
       },
       {
         "type": "paragraph",
@@ -461,7 +461,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Email: amir.support@icloud.com"
+        "text": "Email: support@pixelappspk.com"
       }
     ]
   },
@@ -839,7 +839,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Email: amir.support@icloud.com"
+        "text": "Email: support@pixelappspk.com"
       }
     ]
   }

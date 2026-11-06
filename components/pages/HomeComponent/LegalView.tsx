@@ -13,18 +13,24 @@ export const LegalView: React.FC<LegalViewProps> = ({ data }) => {
   const blocks = data?.blocks || [];
 
   const renderTextWithLinks = (text: string) => {
-    if (text.includes("info@pixelappspk.com")) {
-      const parts = text.split("info@pixelappspk.com");
+    const emailRegex = /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g;
+    if (emailRegex.test(text)) {
+      const parts = text.split(emailRegex);
       return (
         <span>
-          {parts[0]}
-          <a
-            href="mailto:info@pixelappspk.com"
-            className="text-[#46bab4] underline hover:text-[#1c1c1c] transition-colors"
-          >
-            info@pixelappspk.com
-          </a>
-          {parts[1]}
+          {parts.map((part, index) =>
+            emailRegex.test(part) ? (
+              <a
+                key={index}
+                href={`mailto:${part}`}
+                className="text-[#46bab4] underline hover:text-[#1c1c1c] transition-colors"
+              >
+                {part}
+              </a>
+            ) : (
+              part
+            )
+          )}
         </span>
       );
     }
